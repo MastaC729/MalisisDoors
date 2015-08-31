@@ -32,6 +32,8 @@ import net.malisis.doors.door.sound.SilentDoorSound;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 
 /**
  * @author Ordinastie
@@ -58,7 +60,7 @@ public class Curtain extends DoorDescriptor
 		setTab(MalisisDoors.tab);
 
 		//Recipe
-		setRecipe("AA", "AA", "AA", 'A', Blocks.wool);
+		setRecipe("AA", "AA", "BB", 'A', Blocks.wool, 'B', Items.string);	//Because the original mod owner is stubborn, boo hoo
 	}
 
 }
